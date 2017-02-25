@@ -1,0 +1,10 @@
+{
+    "name": "eslint-config-rwhogg",
+    "version": "1.0.0",
+    "keywords": ["eslint"],
+    "author": "Bob W. Hogg",
+    "dependencies": {
+        "eslint": "^3.15.0"
+    },
+    "main": "main.js"
+}
