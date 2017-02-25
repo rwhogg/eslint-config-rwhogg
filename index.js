@@ -52,6 +52,7 @@ module.exports =
             "error",
             "smart"
         ],
+        "no-console": "off",
         "no-else-return": "error",
         "no-eval": "error",
         "no-fallthrough": "off",
