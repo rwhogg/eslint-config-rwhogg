@@ -1,10 +1,14 @@
 {
     "name": "eslint-config-rwhogg",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "keywords": ["eslint"],
     "author": "Bob W. Hogg",
     "dependencies": {
         "eslint": "^3.15.0"
     },
-    "main": "main.js"
+    "main": "index.js",
+    "license": "Unlicense",
+    "scripts": {
+        "test": "eslint -c index.js index.js"
+    }
 }
