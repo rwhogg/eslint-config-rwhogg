@@ -12,7 +12,7 @@ module.exports =
         ecmaFeatures:
         {
             globalReturn: true
-        },   
+        },
         ecmaVersion: 2017
     },
     extends: "eslint:recommended",
