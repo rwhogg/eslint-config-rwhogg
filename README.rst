@@ -10,10 +10,6 @@ Note that I do not accept pull requests to this repo.
 FAQ
 ---
 
-* Emacs doesn't get along with this style
-
-  I know. That bugs me a great deal; I haven't gotten around to fixing it though.
-
 * Some of the rules are redundant with Editorconfig rules
 
   That's true; however, these files serve two different purposes. ESLint is for continuous integration;
