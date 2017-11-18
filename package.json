@@ -1,7 +1,9 @@
 {
     "name": "eslint-config-rwhogg",
     "version": "0.1.0",
-    "keywords": ["eslint"],
+    "keywords": [
+        "eslint"
+    ],
     "author": "Bob W. Hogg",
     "dependencies": {
         "eslint": "^3.15.0"
