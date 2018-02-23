@@ -4,9 +4,10 @@
     "keywords": [
         "eslint"
     ],
-    "author": "Bob W. Hogg",
+    "author": "Bob Wombat Hogg",
     "dependencies": {
-        "eslint": "^3.15.0"
+        "eslint": "^4.18.1",
+        "eslint-plugin-fp": "^2.3.0"
     },
     "main": "index.js",
     "license": "Unlicense",

@@ -1,5 +1,4 @@
-eslint-config-rwhogg
-====================
+# eslint-config-rwhogg
 
 This is an ESLint configuration file that reflects my opinions.
 
