@@ -96,10 +96,10 @@ module.exports = {
             "error",
             "never",
         ],
-        "brace-style": [
+        /*"brace-style": [
             "error",
             "stroustrup",
-        ],
+        ],*/ // disable until better options available
         "no-lonely-if": "error",
         "no-trailing-spaces": "error",
         "unicode-bom": [
