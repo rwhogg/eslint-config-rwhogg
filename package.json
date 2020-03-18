@@ -7,7 +7,7 @@
     "author": "Bob Wombat Hogg",
     "repository": "https://github.com/rwhogg/eslint-config-rwhogg.git",
     "dependencies": {
-        "eslint": "^6.5.1",
+        "eslint": "^6.8.0",
         "eslint-plugin-fp": "^2.3.0"
     },
     "main": "index.js",
