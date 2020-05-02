@@ -8,7 +8,7 @@ module.exports = {
         ecmaFeatures: {
             globalReturn: true,
         },
-        ecmaVersion: 9,
+        ecmaVersion: 10,
     },
     plugins: ["fp"],
     extends: "eslint:recommended",
