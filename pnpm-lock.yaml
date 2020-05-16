@@ -1,6 +1,6 @@
 dependencies:
-  eslint: 6.8.0
-  eslint-plugin-fp: 2.3.0_eslint@6.8.0
+  eslint: 7.0.0
+  eslint-plugin-fp: 2.3.0_eslint@7.0.0
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -134,6 +134,15 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  /chalk/4.0.0:
+    dependencies:
+      ansi-styles: 4.2.1
+      supports-color: 7.1.0
+    dev: false
+    engines:
+      node: '>=10'
+    resolution:
+      integrity: sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   /chardet/0.7.0:
     dev: false
     resolution:
@@ -184,18 +193,16 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha1-2VQ3LYbVeS/NZ+nyt5GxqxYkEbs=
-  /cross-spawn/6.0.5:
+  /cross-spawn/7.0.2:
     dependencies:
-      nice-try: 1.0.5
-      path-key: 2.0.1
-      semver: 5.7.1
-      shebang-command: 1.2.0
-      which: 1.3.1
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
     dev: false
     engines:
-      node: '>=4.8'
+      node: '>= 8'
     resolution:
-      integrity: sha512-eTVLrBSt7fjbDygz805pMnstIs2VTBNkRm0qxZd+M7A5XDdxVRWO5MxGBXZhjY4cqLYLdtrGqRf8mBPmzwSpWQ==
+      integrity: sha512-PD6G8QG3S4FK/XCGFbEQrDqO2AnMMsy0meR7lerlIOHAAbkuavGU/pOqprrlvfTNjvowivTeBsjebAL0NSoMxw==
   /debug/4.1.1:
     dependencies:
       ms: 2.1.2
@@ -237,10 +244,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-otzzTim2/1+lVrlH19EfQQJEhVJSu0zOb9ygb3iapN6UlyaDtyRq4b5U1FuW0v1lRa9Fp/GJyHkSwm6NqABgCA==
-  /eslint-plugin-fp/2.3.0_eslint@6.8.0:
+  /eslint-plugin-fp/2.3.0_eslint@7.0.0:
     dependencies:
       create-eslint-index: 1.0.0
-      eslint: 6.8.0
+      eslint: 7.0.0
       eslint-ast-utils: 1.1.0
       lodash: 4.17.15
       req-all: 0.1.0
@@ -260,32 +267,32 @@ packages:
       node: '>=8.0.0'
     resolution:
       integrity: sha512-oYrhJW7S0bxAFDvWqzvMPRm6pcgcnWc4QnofCAqRTRfQC0JcwenzGglTtsLyIuuWFfkqDG9vz67cnttSd53djw==
-  /eslint-utils/1.4.3:
+  /eslint-utils/2.0.0:
     dependencies:
       eslint-visitor-keys: 1.1.0
     dev: false
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-fbBN5W2xdY45KulGXmLHZ3c3FHfVYmKg0IrAKGOkT/464PQsx2UeIzfz1RmEci+KLm1bBaAzZAh8+/E+XAeZ8Q==
+      integrity: sha512-0HCPuJv+7Wv1bACm8y5/ECVfYdfsAm9xmVb7saeFlxjPYALefjhbYoCkBjPdPzGH8wWyTpAez82Fh3VKYEZ8OA==
   /eslint-visitor-keys/1.1.0:
     dev: false
     engines:
       node: '>=4'
     resolution:
       integrity: sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
-  /eslint/6.8.0:
+  /eslint/7.0.0:
     dependencies:
       '@babel/code-frame': 7.8.3
       ajv: 6.12.2
-      chalk: 2.4.2
-      cross-spawn: 6.0.5
+      chalk: 4.0.0
+      cross-spawn: 7.0.2
       debug: 4.1.1
       doctrine: 3.0.0
       eslint-scope: 5.0.0
-      eslint-utils: 1.4.3
+      eslint-utils: 2.0.0
       eslint-visitor-keys: 1.1.0
-      espree: 6.2.1
+      espree: 7.0.0
       esquery: 1.3.1
       esutils: 2.0.3
       file-entry-cache: 5.0.1
@@ -299,36 +306,35 @@ packages:
       is-glob: 4.0.1
       js-yaml: 3.13.1
       json-stable-stringify-without-jsonify: 1.0.1
-      levn: 0.3.0
+      levn: 0.4.1
       lodash: 4.17.15
       minimatch: 3.0.4
-      mkdirp: 0.5.5
       natural-compare: 1.4.0
-      optionator: 0.8.3
+      optionator: 0.9.1
       progress: 2.0.3
-      regexpp: 2.0.1
-      semver: 6.3.0
-      strip-ansi: 5.2.0
+      regexpp: 3.1.0
+      semver: 7.3.2
+      strip-ansi: 6.0.0
       strip-json-comments: 3.1.0
       table: 5.4.6
       text-table: 0.2.0
       v8-compile-cache: 2.1.0
     dev: false
     engines:
-      node: ^8.10.0 || ^10.13.0 || >=11.10.1
+      node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-K+Iayyo2LtyYhDSYwz5D5QdWw0hCacNzyq1Y821Xna2xSJj7cijoLLYmLxTQgcgZ9mC61nryMy9S7GRbYpI5Ig==
-  /espree/6.2.1:
+      integrity: sha512-qY1cwdOxMONHJfGqw52UOpZDeqXy8xmD0u8CT6jIstil72jkhURC704W8CFyTPDPllz4z4lu0Ql1+07PG/XdIg==
+  /espree/7.0.0:
     dependencies:
       acorn: 7.1.1
       acorn-jsx: 5.2.0_acorn@7.1.1
       eslint-visitor-keys: 1.1.0
     dev: false
     engines:
-      node: '>=6.0.0'
+      node: ^10.12.0 || >=12.0.0
     resolution:
-      integrity: sha512-ysCxRQY3WaXJz9tdbWOwuWr5Y/XrPTGX9Kiz3yoUXwW0VZ4w30HTkQLaGx/+ttFjF8i+ACbArnB4ce68a9m5hw==
+      integrity: sha512-/r2XEx5Mw4pgKdyb7GNLQNsu++asx/dltf/CI8RFi9oGHxmQFgvLbc5Op4U6i8Oaj+kdslhJtVlEZeAqH5qOTw==
   /esprima/4.0.1:
     dev: false
     engines:
@@ -579,15 +585,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=
-  /levn/0.3.0:
+  /levn/0.4.1:
     dependencies:
-      prelude-ls: 1.1.2
-      type-check: 0.3.2
+      prelude-ls: 1.2.1
+      type-check: 0.4.0
     dev: false
     engines:
       node: '>= 0.8.0'
     resolution:
-      integrity: sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=
+      integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==
   /lodash.get/4.4.2:
     dev: false
     resolution:
@@ -635,10 +641,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
-  /nice-try/1.0.5:
-    dev: false
-    resolution:
-      integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
   /once/1.4.0:
     dependencies:
       wrappy: 1.0.2
@@ -653,19 +655,19 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-5NcSkPHhwTVFIQN+TUqXoS5+dlElHXdpAWu9I0HP20YOtIi+aZ0Ct82jdlILDxjLEAWwvm+qj1m6aEtsDVmm6Q==
-  /optionator/0.8.3:
+  /optionator/0.9.1:
     dependencies:
       deep-is: 0.1.3
       fast-levenshtein: 2.0.6
-      levn: 0.3.0
-      prelude-ls: 1.1.2
-      type-check: 0.3.2
+      levn: 0.4.1
+      prelude-ls: 1.2.1
+      type-check: 0.4.0
       word-wrap: 1.2.3
     dev: false
     engines:
       node: '>= 0.8.0'
     resolution:
-      integrity: sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA==
+      integrity: sha512-74RlY5FCnhq4jRxVUPKDaRwrVNXMqsGsiW6AJw4XK8hmtm10wC0ypZBLw5IIp85NZMr91+qd1RvvENwg7jjRFw==
   /os-tmpdir/1.0.2:
     dev: false
     engines:
@@ -686,18 +688,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
-  /path-key/2.0.1:
+  /path-key/3.1.1:
     dev: false
     engines:
-      node: '>=4'
+      node: '>=8'
     resolution:
-      integrity: sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
-  /prelude-ls/1.1.2:
+      integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
+  /prelude-ls/1.2.1:
     dev: false
     engines:
       node: '>= 0.8.0'
     resolution:
-      integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+      integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
   /progress/2.0.3:
     dev: false
     engines:
@@ -710,12 +712,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
-  /regexpp/2.0.1:
+  /regexpp/3.1.0:
     dev: false
     engines:
-      node: '>=6.5.0'
+      node: '>=8'
     resolution:
-      integrity: sha512-lv0M6+TkDVniA3aD1Eg0DVpfU/booSu7Eev3TDO/mZKHBfVjgCGTV4t4buppESEYDtkArYFOxTJWv6S5C+iaNw==
+      integrity: sha512-ZOIzd8yVsQQA7j8GCSlPGXwg5PfmA1mrq0JP4nGhh54LaKN3xdai/vHUDu74pKwV8OxseMS65u2NImosQcSD0Q==
   /req-all/0.1.0:
     dev: false
     engines:
@@ -762,30 +764,27 @@ packages:
     dev: false
     resolution:
       integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
-  /semver/5.7.1:
+  /semver/7.3.2:
     dev: false
+    engines:
+      node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==
-  /semver/6.3.0:
-    dev: false
-    hasBin: true
-    resolution:
-      integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
-  /shebang-command/1.2.0:
+      integrity: sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
+  /shebang-command/2.0.0:
     dependencies:
-      shebang-regex: 1.0.0
+      shebang-regex: 3.0.0
     dev: false
     engines:
-      node: '>=0.10.0'
+      node: '>=8'
     resolution:
-      integrity: sha1-RKrGW2lbAzmJaMOfNj/uXer98eo=
-  /shebang-regex/1.0.0:
+      integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==
+  /shebang-regex/3.0.0:
     dev: false
     engines:
-      node: '>=0.10.0'
+      node: '>=8'
     resolution:
-      integrity: sha1-2kL0l0DAtC2yypcoVxyxkMmO/qM=
+      integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
   /signal-exit/3.0.3:
     dev: false
     resolution:
@@ -893,14 +892,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
-  /type-check/0.3.2:
+  /type-check/0.4.0:
     dependencies:
-      prelude-ls: 1.1.2
+      prelude-ls: 1.2.1
     dev: false
     engines:
       node: '>= 0.8.0'
     resolution:
-      integrity: sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
+      integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==
   /type-fest/0.11.0:
     dev: false
     engines:
@@ -923,13 +922,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-usZBT3PW+LOjM25wbqIlZwPeJV+3OSz3M1k1Ws8snlW39dZyYL9lOGC5FgPVHfk0jKmjiDV8Z0mIbVQPiwFs7g==
-  /which/1.3.1:
+  /which/2.0.2:
     dependencies:
       isexe: 2.0.0
     dev: false
+    engines:
+      node: '>= 8'
     hasBin: true
     resolution:
-      integrity: sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==
+      integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   /word-wrap/1.2.3:
     dev: false
     engines:
@@ -949,5 +950,5 @@ packages:
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
 specifiers:
-  eslint: ^6.8.0
+  eslint: ^7.0.0
   eslint-plugin-fp: ^2.3.0
