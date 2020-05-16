@@ -54,7 +54,7 @@ module.exports = {
             "error",
             {
                 ignoreArrayIndexes: true,
-                ignore: [0, 1, 2, 3, 4, 5, 8, 10, 16],
+                ignore: [0, 1, 2, 3, 4, 5, 8, 10, 16, -1],
             },
         ],
         "no-multi-spaces": "error",
