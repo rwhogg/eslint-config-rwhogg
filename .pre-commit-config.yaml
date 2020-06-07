@@ -1,0 +1,11 @@
+{
+    "repos": [
+        {
+            "repo": "https://gist.github.com/060fcabc322adca5a77d447de500bfe3.git",
+            "rev": "master",
+            "hooks": [
+                { "id": "gitleaks_checker_unofficial" }
+            ]
+        }
+    ]
+}
