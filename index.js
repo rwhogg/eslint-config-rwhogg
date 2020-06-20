@@ -153,5 +153,6 @@ module.exports = {
         "no-tabs": err,
         "no-this-before-super": err,
         "prefer-exponentiation-operator": err,
+        "padded-blocks": [err, "never"],
     },
 }
