@@ -1,6 +1,7 @@
 dependencies:
-  eslint: 7.3.0
-  eslint-plugin-fp: 2.3.0_eslint@7.3.0
+  eslint: 7.3.1
+  eslint-plugin-fp: 2.3.0_eslint@7.3.1
+  eslint-plugin-sonarjs: 0.5.0_eslint@7.3.1
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -221,10 +222,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-otzzTim2/1+lVrlH19EfQQJEhVJSu0zOb9ygb3iapN6UlyaDtyRq4b5U1FuW0v1lRa9Fp/GJyHkSwm6NqABgCA==
-  /eslint-plugin-fp/2.3.0_eslint@7.3.0:
+  /eslint-plugin-fp/2.3.0_eslint@7.3.1:
     dependencies:
       create-eslint-index: 1.0.0
-      eslint: 7.3.0
+      eslint: 7.3.1
       eslint-ast-utils: 1.1.0
       lodash: 4.17.15
       req-all: 0.1.0
@@ -235,6 +236,16 @@ packages:
       eslint: '>=3'
     resolution:
       integrity: sha1-N20qEIcQ6YGYC9w4deO5kg2gSJw=
+  /eslint-plugin-sonarjs/0.5.0_eslint@7.3.1:
+    dependencies:
+      eslint: 7.3.1
+    dev: false
+    engines:
+      node: '>=6'
+    peerDependencies:
+      eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+    resolution:
+      integrity: sha512-XW5MnzlRjhXpIdbULC/qAdJYHWw3rRLws/DyawdlPU/IdVr9AmRK1r2LaCvabwKOAW2XYYSo3kDX58E4MrB7PQ==
   /eslint-scope/5.1.0:
     dependencies:
       esrecurse: 4.2.1
@@ -258,7 +269,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-WFb4ihckKil6hu3Dp798xdzSfddwKKU3+nGniKF6HfeW6OLd2OUDEPP7TcHtB5+QXOKg2s6B2DaMPE1Nn/kxKQ==
-  /eslint/7.3.0:
+  /eslint/7.3.1:
     dependencies:
       '@babel/code-frame': 7.8.3
       ajv: 6.12.2
@@ -301,7 +312,7 @@ packages:
       node: ^10.12.0 || >=12.0.0
     hasBin: true
     resolution:
-      integrity: sha512-dJMVXwfU5PT1cj2Nv2VPPrKahKTGdX+5Dh0Q3YuKt+Y2UhdL2YbzsVaBMyG9HC0tBismlv/r1+eZqs6SMIV38Q==
+      integrity: sha512-cQC/xj9bhWUcyi/RuMbRtC3I0eW8MH0jhRELSvpKYkWep3C6YZ2OkvcvJVUeO6gcunABmzptbXBuDoXsjHmfTA==
   /espree/7.1.0:
     dependencies:
       acorn: 7.3.1
@@ -788,5 +799,6 @@ packages:
     resolution:
       integrity: sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==
 specifiers:
-  eslint: ^7.3.0
+  eslint: ^7.3.1
   eslint-plugin-fp: ^2.3.0
+  eslint-plugin-sonarjs: ^0.5.0

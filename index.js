@@ -12,7 +12,7 @@ module.exports = {
         },
         ecmaVersion: 10,
     },
-    plugins: ["fp"],
+    plugins: ["fp", "sonarjs"],
     // FIXME: you should stop doing this and inline all the rules so you always know what you're doing
     extends: "eslint:recommended",
     rules: {
@@ -134,6 +134,7 @@ module.exports = {
         "no-useless-call": err,
         "no-tabs": err,
         "no-this-before-super": err,
+        "object-curly-spacing": ["error", "always"],
         "padded-blocks": [err, "never"],
         "prefer-exponentiation-operator": err,
         quotes: [
@@ -154,6 +155,10 @@ module.exports = {
         yoda: err,
         "fp/no-loops": err,
         "fp/no-arguments": err,
+        "sonarjs/no-all-duplicated-branches": "error",
+        "sonarjs/no-extra-arguments": "error",
+        "sonarjs/no-one-iteration-loop": "error",
+        "sonarjs/no-redundant-boolean": "error",
         "jsx-quotes": [err, "prefer-double"], // FIXME: should be moved to React-specific ruleset
     },
 }
