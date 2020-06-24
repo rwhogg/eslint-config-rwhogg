@@ -18,11 +18,11 @@ module.exports = {
     rules: {
         "array-bracket-newline": [
             err,
-            {multiline: true},
+            { multiline: true },
         ],
         "array-element-newline": [
             err,
-            {ArrayExpression: "consistent"},
+            { ArrayExpression: "consistent" },
         ],
         "array-bracket-spacing": [
             err,
@@ -34,7 +34,7 @@ module.exports = {
         ],
         camelcase: [
             err,
-            {properties: "never"},
+            { properties: "never" },
         ],
         "block-scoped-var": err,
         "block-spacing":[
@@ -83,7 +83,7 @@ module.exports = {
             err,
             "unix",
         ],
-        "max-len": [err, {"code": 120}],
+        "max-len": [err, { "code": 120 }],
         "new-cap": err,
         "new-parens": err,
         "no-console": "off",
@@ -113,7 +113,7 @@ module.exports = {
         "no-undefined": err,
         "no-underscore-dangle": [
             err,
-            {enforceInMethodNames: true},
+            { enforceInMethodNames: true },
         ],
         "no-lonely-if": err,
         "no-trailing-spaces": err,
