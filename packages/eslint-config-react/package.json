@@ -1,6 +1,6 @@
 {
     "name": "@rwhogg/eslint-config-react",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "keywords": [
         "eslint",
         "react"
@@ -12,7 +12,7 @@
         "directory": "packages/eslint-config-react"
     },
     "dependencies": {
-        "@rwhogg/eslint-config-base": "0.9.1",
+        "@rwhogg/eslint-config-base": "0.10.0",
         "eslint": "^7.4.0",
         "eslint-plugin-react": "^7.20.0"
     },

@@ -22,5 +22,6 @@ module.exports = {
     },
     "rules": {
         "consistent-return": 0,
+        "jsx-quotes": ["error", "prefer-double"],
     },
 }
