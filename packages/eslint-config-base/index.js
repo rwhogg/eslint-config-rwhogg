@@ -12,7 +12,7 @@ module.exports = {
         },
         ecmaVersion: 10,
     },
-    plugins: ["fp", "sonarjs"],
+    plugins: ["fp", "sonarjs", "unicorn"],
     // FIXME: you should stop doing this and inline all the rules so you always know what you're doing
     extends: "eslint:recommended",
     rules: {
@@ -159,6 +159,18 @@ module.exports = {
         "sonarjs/no-extra-arguments": "error",
         "sonarjs/no-one-iteration-loop": "error",
         "sonarjs/no-redundant-boolean": "error",
-        "jsx-quotes": [err, "prefer-double"], // FIXME: should be moved to React-specific ruleset
+        "unicorn/better-regex": "error",
+        "unicorn/custom-error-definition": "error",
+        "unicorn/error-message": "error",
+        "unicorn/escape-case": "error",
+        "unicorn/explicit-length-check": ["error", { "non-zero": "greater-than" }],
+        "unicorn/new-for-builtins": "error",
+        "unicorn/no-array-instanceof": "error",
+        "unicorn/no-console-spaces": "error",
+        "unicorn/no-unsafe-regex": "error",
+        "unicorn/prefer-flat-map": "error",
+        "unicorn/prefer-includes": "error",
+        "unicorn/prefer-starts-ends-with": "error",
+        "unicorn/throw-new-error": "error",
     },
 }
