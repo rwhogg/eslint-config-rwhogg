@@ -1,5 +1,5 @@
 {
-    "name": "eslint-config-rwhogg",
+    "name": "@rwhogg/eslint-config-base",
     "version": "0.9.0",
     "keywords": [
         "eslint"
