@@ -1,5 +1,5 @@
 dependencies:
-  '@rwhogg/eslint-config-base': 0.10.0
+  '@rwhogg/eslint-config-base': 0.11.0
   eslint: 7.4.0
   eslint-plugin-react: 7.20.0_eslint@7.4.0
 devDependencies:
@@ -45,7 +45,7 @@ packages:
     dependencies:
       '@babel/types': 7.10.2
       jsesc: 2.5.2
-      lodash: 4.17.15
+      lodash: 4.17.20
       source-map: 0.5.7
     dev: false
     resolution:
@@ -114,28 +114,28 @@ packages:
       '@babel/types': 7.10.2
       debug: 4.1.1
       globals: 11.12.0
-      lodash: 4.17.15
+      lodash: 4.17.20
     dev: false
     resolution:
       integrity: sha512-C/cTuXeKt85K+p08jN6vMDz8vSV0vZcI0wmQ36o6mjbuo++kPMdpOYw23W2XH04dbRt9/nMEfA4W3eR21CD+TQ==
   /@babel/types/7.10.2:
     dependencies:
       '@babel/helper-validator-identifier': 7.10.1
-      lodash: 4.17.15
+      lodash: 4.17.20
       to-fast-properties: 2.0.0
     dev: false
     resolution:
       integrity: sha512-AD3AwWBSz0AWF0AkCN9VPiWrvldXq+/e3cHa4J89vo4ymjz1XwrBFFVZmkJTsQIPNk+ZVomPSXUJqq8yyjZsng==
-  /@rwhogg/eslint-config-base/0.10.0:
+  /@rwhogg/eslint-config-base/0.11.0:
     dependencies:
       eslint: 7.4.0
       eslint-plugin-fp: 2.3.0_eslint@7.4.0
       eslint-plugin-sonarjs: 0.5.0_eslint@7.4.0
-      eslint-plugin-unicorn: 20.1.0_eslint@7.4.0
+      eslint-plugin-unicorn: 23.0.0_eslint@7.4.0
     dev: false
     resolution:
-      integrity: sha512-2FzPVXNZNH82P70qbfJNxNT+ZcEszQRGKa8bP9yX7ZHSHnmdSG6NpsdXdgS9Rwfw6yn6zrh+VG4P0KYCCKPEvw==
-      tarball: download/@rwhogg/eslint-config-base/0.10.0/0f29bbc7c8361d7b132fa56df39115acb143da1f171e2224b6ea75313d496577
+      integrity: sha512-XE0hVTSLkcfi96krHHADJhTDvb1Oh6G+g5ISPxgD9kJJbRpxkEuzhBqYsX/PgQXdOgCXw6WveQBUSIfo+AO8CQ==
+      tarball: download/@rwhogg/eslint-config-base/0.11.0/96ae85522f182766987c2b5bd4b3412032cdc70a277caf1fc7c140e7c4c3f942
   /@types/color-name/1.1.1:
     dev: false
     resolution:
@@ -232,7 +232,7 @@ packages:
       '@babel/traverse': 7.10.1
       '@babel/types': 7.10.2
       eslint: 7.4.0
-      eslint-visitor-keys: 1.2.0
+      eslint-visitor-keys: 1.3.0
       resolve: 1.17.0
     dev: false
     engines:
@@ -478,16 +478,16 @@ packages:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
     resolution:
       integrity: sha512-XW5MnzlRjhXpIdbULC/qAdJYHWw3rRLws/DyawdlPU/IdVr9AmRK1r2LaCvabwKOAW2XYYSo3kDX58E4MrB7PQ==
-  /eslint-plugin-unicorn/20.1.0_eslint@7.4.0:
+  /eslint-plugin-unicorn/23.0.0_eslint@7.4.0:
     dependencies:
       ci-info: 2.0.0
       clean-regexp: 1.0.0
       eslint: 7.4.0
       eslint-ast-utils: 1.1.0
       eslint-template-visitor: 2.2.1_eslint@7.4.0
-      eslint-utils: 2.0.0
+      eslint-utils: 2.1.0
       import-modules: 2.0.0
-      lodash: 4.17.15
+      lodash: 4.17.20
       pluralize: 8.0.0
       read-pkg-up: 7.0.1
       regexp-tree: 0.1.21
@@ -498,9 +498,9 @@ packages:
     engines:
       node: '>=10'
     peerDependencies:
-      eslint: '>=7.0.0'
+      eslint: '>=7.11.0'
     resolution:
-      integrity: sha512-XQxLBJT/gnwyRR6cfYsIK1AdekQchAt5tmcsnldevGjgR2xoZsRUa5/i6e0seNHy2RoT57CkTnbVHwHF8No8LA==
+      integrity: sha512-Vabo3cjl6cjyhcf+76CdQEY6suOFzK0Xh3xo0uL9VDYrDJP5+B6PjV0tHTYm82WZmFWniugFJM3ywHSNYTi/ZQ==
   /eslint-rule-composer/0.3.0:
     dev: true
     engines:
@@ -535,6 +535,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-0HCPuJv+7Wv1bACm8y5/ECVfYdfsAm9xmVb7saeFlxjPYALefjhbYoCkBjPdPzGH8wWyTpAez82Fh3VKYEZ8OA==
+  /eslint-utils/2.1.0:
+    dependencies:
+      eslint-visitor-keys: 1.3.0
+    dev: false
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-w94dQYoauyvlDc43XnGB8lU3Zt713vNChgt4EWwhXAP2XkBvndfxF0AgIqKOOasjPIPzj9JqgwkwbCYD0/V3Zg==
   /eslint-visitor-keys/1.2.0:
     dev: false
     engines:
@@ -939,6 +947,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  /lodash/4.17.20:
+    dev: false
+    resolution:
+      integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
   /loose-envify/1.4.0:
     dependencies:
       js-tokens: 4.0.0
@@ -1515,7 +1527,7 @@ packages:
 specifiers:
   '@babel/eslint-parser': ^7.12.1
   '@babel/eslint-plugin': ^7.12.1
-  '@rwhogg/eslint-config-base': 0.10.0
+  '@rwhogg/eslint-config-base': 0.11.0
   eslint: ^7.4.0
   eslint-plugin-react: ^7.20.0
   react: ^17.0.1
