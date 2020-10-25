@@ -17,11 +17,13 @@
         "eslint-plugin-react": "^7.20.0"
     },
     "devDependencies": {
-        "babel-eslint": "^10.1.0",
-        "react": "^16.13.1"
+        "@babel/eslint-parser": "^7.12.1",
+        "@babel/eslint-plugin": "^7.12.1",
+        "react": "^17.0.1"
     },
     "peerDependencies": {
-        "babel-eslint": "^10.1.0"
+        "@babel/eslint-parser": "^7.12.1",
+        "@babel/eslint-plugin": "^7.12.1"
     },
     "main": "index.js",
     "license": "Unlicense",
