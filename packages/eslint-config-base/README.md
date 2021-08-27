@@ -13,3 +13,7 @@ FAQ
 
   That's true; however, these files serve two different purposes. ESLint is for continuous integration;
   Editorconfig is for editors.
+
+* What's the license?
+
+Public domain, but keep in mind that it depends on eslint-plugin-sonarjs, which is (as of this writing) LGPL-3.0
