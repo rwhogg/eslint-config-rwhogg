@@ -13,7 +13,6 @@ module.exports = {
         ecmaVersion: 10,
     },
     plugins: ["fp", "sonarjs", "unicorn"],
-    // FIXME: you should stop doing this and inline all the rules so you always know what you're doing
     rules: {
         "getter-return": err,
         "no-cond-assign": [err, "except-parens"],
