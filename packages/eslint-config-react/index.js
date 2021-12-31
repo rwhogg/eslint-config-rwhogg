@@ -1,3 +1,5 @@
+const err = "error"
+
 module.exports = {
     env: {
         browser: true,
@@ -22,6 +24,7 @@ module.exports = {
     },
     "rules": {
         "consistent-return": 0,
-        "jsx-quotes": ["error", "prefer-double"],
+        "jsx-quotes": [err, "prefer-double"],
+        // FIXME: add no-invalid-remove-event-listener
     },
 }

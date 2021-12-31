@@ -1,4 +1,5 @@
 const err = "error"
+const off = "off"
 
 module.exports = {
     env: {
@@ -17,7 +18,7 @@ module.exports = {
         "getter-return": err,
         "no-cond-assign": [err, "except-parens"],
         "no-control-regex": err,
-        "no-debugger": "off",
+        "no-debugger": off,
         "no-dupe-else-if": err,
         "no-duplicate-case": err,
         "no-div-regex": err,
@@ -37,7 +38,7 @@ module.exports = {
         "no-prototype-builtins": err,
         "no-regex-spaces": err,
         "no-setter-return": err,
-        "no-sparse-arrays": "off",
+        "no-sparse-arrays": off,
         "no-unreachable-loop": err,
         "no-unsafe-negation": err,
         "no-useless-backreference": err,
@@ -114,13 +115,13 @@ module.exports = {
         "max-len": [err, { "code": 120 }],
         "new-cap": err,
         "new-parens": err,
-        "no-console": "off",
+        "no-console": off,
         "no-class-assign": err,
         "no-dupe-class-members": err,
         "no-else-return": err,
         "no-extra-label": err,
         "no-eval": err,
-        "no-fallthrough": "off",
+        "no-fallthrough": off,
         "no-iterator": err,
         "no-lone-blocks": err,
         "no-magic-numbers": [
@@ -206,11 +207,14 @@ module.exports = {
         "unicorn/no-instanceof-array": err,
         "unicorn/no-array-push-push": err,
         "unicorn/no-console-spaces": err,
-        // NOTE: NOT redundant with the builtin no-lonely-if. It's recommended to use bothtogether
+        // NOTE: NOT redundant with the builtin no-lonely-if. It's recommended to use both together
         "unicorn/no-lonely-if": err,
         "unicorn/no-nested-ternary": err,
         "unicorn/no-this-assignment": err,
+        "unicorn/no-thenable": err,
         "unicorn/no-unsafe-regex": err,
+        "unicorn/no-useless-fallback-in-spread": err,
+        "unicorn/no-useless-promise-resolve-reject": err,
         "unicorn/prefer-array-find": err,
         "unicorn/prefer-date-now": err,
         "unicorn/prefer-exponentiation-operator": err,
