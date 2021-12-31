@@ -28,5 +28,8 @@
     ],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
+    },
+    "engines": {
+        "pnpm": ">=6"
     }
 }
