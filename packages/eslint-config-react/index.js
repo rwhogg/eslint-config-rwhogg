@@ -10,7 +10,7 @@ module.exports = {
         "@rwhogg/eslint-config-base",
         "plugin:react/recommended",
     ],
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
         "sourceType": "module",
         "ecmaFeatures": {
@@ -25,6 +25,6 @@ module.exports = {
     "rules": {
         "consistent-return": 0,
         "jsx-quotes": [err, "prefer-double"],
-        // FIXME: add no-invalid-remove-event-listener
+        "unicorn/no-invalid-remove-event-listener": err,
     },
 }

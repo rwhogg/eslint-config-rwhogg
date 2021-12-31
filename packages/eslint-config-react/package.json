@@ -1,6 +1,6 @@
 {
     "name": "@rwhogg/eslint-config-react",
-    "version": "0.6.0",
+    "version": "0.7.0",
     "keywords": [
         "eslint",
         "react"
@@ -12,23 +12,27 @@
         "directory": "packages/eslint-config-react"
     },
     "dependencies": {
-        "@rwhogg/eslint-config-base": "0.12.0",
-        "eslint": "^7.32.0",
-        "eslint-plugin-react": "^7.23.2"
+        "@rwhogg/eslint-config-base": "0.13.0",
+        "eslint": "^8.5.0",
+        "eslint-plugin-react": "^7.28.0"
     },
     "devDependencies": {
-        "@babel/eslint-parser": "^7.12.1",
-        "@babel/eslint-plugin": "^7.12.1",
-        "react": "^17.0.1"
+        "@babel/core": "^7.16.7",
+        "@babel/eslint-parser": "^7.16.5",
+        "@babel/eslint-plugin": "^7.16.5",
+        "@babel/preset-react": "^7.16.7",
+        "react": "^17.0.2"
     },
     "peerDependencies": {
-        "@babel/eslint-parser": "^7.12.1",
-        "@babel/eslint-plugin": "^7.12.1"
+        "@babel/core": "^7.16.7",
+        "@babel/eslint-parser": "^7.16.5",
+        "@babel/eslint-plugin": "^7.16.5",
+        "@babel/preset-react": "^7.16.7"
     },
     "main": "index.js",
     "license": "Unlicense",
     "scripts": {
-        "test": "eslint -c index.js index.js test.js"
+        "test": "eslint -c index.js index.js Test.js"
     },
     "files": [
         "LICENSE.md",
@@ -37,5 +41,11 @@
     ],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/"
+    },
+    "engines": {
+        "pnpm": ">=6"
+    },
+    "babel": {
+        "presets": ["@babel/preset-react"]
     }
 }
