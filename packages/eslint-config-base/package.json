@@ -11,7 +11,7 @@
         "directory": "packages/eslint-config-base"
     },
     "dependencies": {
-        "eslint": "^8.5.0",
+        "eslint": "^8.6.0",
         "eslint-plugin-fp": "^2.3.0",
         "eslint-plugin-sonarjs": "^0.11.0",
         "eslint-plugin-unicorn": "^40.0.0"
