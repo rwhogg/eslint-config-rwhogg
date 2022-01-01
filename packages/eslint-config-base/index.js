@@ -13,7 +13,7 @@ module.exports = {
         ecmaFeatures: {
             globalReturn: true,
         },
-        ecmaVersion: 10,
+        ecmaVersion: 2022,
     },
     plugins: ["fp", "sonarjs", "unicorn"],
     rules: {
@@ -120,8 +120,8 @@ module.exports = {
         "no-class-assign": err,
         "no-dupe-class-members": err,
         "no-else-return": err,
-        "no-extra-label": err,
         "no-eval": err,
+        "no-extra-label": err,
         "no-fallthrough": off,
         "no-iterator": err,
         "no-lone-blocks": err,
@@ -136,7 +136,7 @@ module.exports = {
         "no-multi-spaces": err,
         "no-multiple-empty-lines": [
             err,
-            { 
+            {
                 max: 2,
                 maxEOF: 1,
             },
