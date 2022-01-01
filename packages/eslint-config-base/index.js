@@ -1,3 +1,4 @@
+const always = "always"
 const err = "error"
 const off = "off"
 const never = "never"
@@ -35,7 +36,7 @@ module.exports = {
         ],
         "block-spacing":[
             err,
-            "always",
+            always,
         ],
         "brace-style": [
             err,
@@ -60,7 +61,19 @@ module.exports = {
             "property",
         ],
         "dot-notation": err,
+        "eol-last": [
+            err,
+            always,
+        ],
+        eqeqeq: [
+            err,
+            "smart",
+        ],
         "getter-return": err,
+        "linebreak-style": [
+            err,
+            "unix",
+        ],
         "no-cond-assign": [err, "except-parens"],
         "no-control-regex": err,
         "no-debugger": off,
@@ -88,14 +101,6 @@ module.exports = {
         "no-unsafe-negation": err,
         "no-useless-backreference": err,
         "use-isnan": err,
-        "eol-last": [
-            err,
-            "always",
-        ],
-        eqeqeq: [
-            err,
-            "smart",
-        ],
         "for-direction": err,
         "func-call-spacing": [
             err,
@@ -107,10 +112,6 @@ module.exports = {
             {
                 "SwitchCase": 1,
             },
-        ],
-        "linebreak-style": [
-            err,
-            "unix",
         ],
         "max-len": [err, { "code": 120 }],
         "new-cap": err,
@@ -133,10 +134,17 @@ module.exports = {
         ],
         "no-mixed-spaces-and-tabs": err,
         "no-multi-spaces": err,
+        "no-multiple-empty-lines": [
+            err,
+            { 
+                max: 2,
+                maxEOF: 1,
+            },
+        ],
         "no-new-wrappers": err,
         "no-return-assign": [
             err,
-            "always",
+            always,
         ],
         "no-self-compare": err,
         "no-sequences": err,
@@ -166,7 +174,7 @@ module.exports = {
         "no-useless-computed-key": err,
         "no-tabs": err,
         "no-this-before-super": err,
-        "object-curly-spacing": [err, "always"],
+        "object-curly-spacing": [err, always],
         "padded-blocks": [err, never],
         "prefer-const": [err, { destructuring: "all" }],
         "prefer-exponentiation-operator": err,

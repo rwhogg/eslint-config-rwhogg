@@ -78,6 +78,32 @@ const curly = v => {
 const dotLocation = window.
     location
 
+const dotNotation = window["location"]
+
+// ignoring eol-last since it would make manipulating this file a pain
+
+const eqeqeq = v => 1 == "1"
+
+const getterReturn = {
+    get noReturn() {
+        const what = "ever"
+    }
+}
+
+// ignoring linebreak-style since it would make manipulating this file a pain
+
+const maxLen = 1 + "this is the longest string anyone has ever seen why on Earth would you write a string this long. Never ever do that"
+
+const newCap = () => {
+    const uncapitalizedConstructor = () => "should be UncapitalizedConstructor"
+    return new uncapitalizedConstructor()
+}
+
+const newParens = () => {
+    const ConstructorFunc = () => "A constructor with no args"
+    return new ConstructorFunc
+}
+
 const objectCurlySpacing = {"shouldBe": "spaced better" }
 
 var noVar = "use let or const"
