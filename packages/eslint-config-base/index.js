@@ -1,5 +1,6 @@
 const err = "error"
 const off = "off"
+const never = "never"
 
 module.exports = {
     env: {
@@ -15,6 +16,45 @@ module.exports = {
     },
     plugins: ["fp", "sonarjs", "unicorn"],
     rules: {
+        "accessor-pairs": err,
+        "array-bracket-newline": [
+            err,
+            { multiline: true },
+        ],
+        "array-bracket-spacing": [
+            err,
+            never,
+        ],
+        "array-element-newline": [
+            err,
+            { ArrayExpression: "consistent" },
+        ],
+        "arrow-body-style": [
+            err,
+            "as-needed",
+        ],
+        "block-spacing":[
+            err,
+            "always",
+        ],
+        "brace-style": [
+            err,
+            "stroustrup",
+        ],
+        camelcase: [
+            err,
+            { properties: never },
+        ],
+        "comma-dangle": [
+            err,
+            "always-multiline",
+        ],
+        "comma-spacing": err,
+        "comma-style": err,
+        "computed-property-spacing": err,
+        "consistent-return": err,
+        curly: err,
+        "constructor-super": err,
         "getter-return": err,
         "no-cond-assign": [err, "except-parens"],
         "no-control-regex": err,
@@ -43,46 +83,6 @@ module.exports = {
         "no-unsafe-negation": err,
         "no-useless-backreference": err,
         "use-isnan": err,
-        "accessor-pairs": err,
-        "array-bracket-newline": [
-            err,
-            { multiline: true },
-        ],
-        "array-element-newline": [
-            err,
-            { ArrayExpression: "consistent" },
-        ],
-        "array-bracket-spacing": [
-            err,
-            "never",
-        ],
-        "arrow-body-style": [
-            err,
-            "as-needed",
-        ],
-        camelcase: [
-            err,
-            { properties: "never" },
-        ],
-        "block-scoped-var": err,
-        "block-spacing":[
-            err,
-            "always",
-        ],
-        "brace-style": [
-            err,
-            "stroustrup",
-        ],
-        "comma-dangle": [
-            err,
-            "always-multiline",
-        ],
-        "comma-spacing": err,
-        "comma-style": err,
-        "computed-property-spacing": err,
-        "consistent-return": err,
-        curly: err,
-        "constructor-super": err,
         "dot-location": [
             err,
             "property",
@@ -99,7 +99,7 @@ module.exports = {
         "for-direction": err,
         "func-call-spacing": [
             err,
-            "never",
+            never,
         ],
         indent: [
             err,
@@ -167,7 +167,7 @@ module.exports = {
         "no-tabs": err,
         "no-this-before-super": err,
         "object-curly-spacing": [err, "always"],
-        "padded-blocks": [err, "never"],
+        "padded-blocks": [err, never],
         "prefer-const": [err, { destructuring: "all" }],
         "prefer-exponentiation-operator": err,
         "prefer-numeric-literals": err,
@@ -178,13 +178,12 @@ module.exports = {
         "require-atomic-updates": err,
         semi: [
             err,
-            "never",
+            never,
         ],
         "unicode-bom": [
             err,
-            "never",
+            never,
         ],
-        "valid-jsdoc": err,
         "valid-typeof": err,
         yoda: err,
         "fp/no-loops": err,
@@ -217,13 +216,12 @@ module.exports = {
         "unicorn/no-useless-promise-resolve-reject": err,
         "unicorn/prefer-array-find": err,
         "unicorn/prefer-date-now": err,
-        "unicorn/prefer-exponentiation-operator": err,
         "unicorn/prefer-array-flat-map": err,
         "unicorn/prefer-includes": err,
         "unicorn/prefer-math-trunc": err, // but still prefer Math.floor in most cases...
         "unicorn/prefer-negative-index": err,
         "unicorn/prefer-spread": err,
-        "unicorn/prefer-starts-ends-with": err,
+        "unicorn/prefer-string-starts-ends-with": err,
         "unicorn/throw-new-error": err,
     },
 }
