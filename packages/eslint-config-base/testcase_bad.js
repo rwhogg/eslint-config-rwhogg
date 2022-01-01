@@ -62,6 +62,22 @@ const consistentReturn = v => {
     return "this is also fine"
 }
 
+class ConstructorSuper extends null {
+    // the real problem here is extending null, but whatever...
+    constructor() {
+        super()
+    }
+}
+
+const curly = v => {
+    if(v)
+        return "this should be a block statement"
+    return "this is fine"
+}
+
+const dotLocation = window.
+    location
+
 const objectCurlySpacing = {"shouldBe": "spaced better" }
 
 var noVar = "use let or const"

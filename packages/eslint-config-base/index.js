@@ -53,8 +53,13 @@ module.exports = {
         "comma-style": err,
         "computed-property-spacing": err,
         "consistent-return": err,
-        curly: err,
         "constructor-super": err,
+        curly: err,
+        "dot-location": [
+            err,
+            "property",
+        ],
+        "dot-notation": err,
         "getter-return": err,
         "no-cond-assign": [err, "except-parens"],
         "no-control-regex": err,
@@ -83,11 +88,6 @@ module.exports = {
         "no-unsafe-negation": err,
         "no-useless-backreference": err,
         "use-isnan": err,
-        "dot-location": [
-            err,
-            "property",
-        ],
-        "dot-notation": err,
         "eol-last": [
             err,
             "always",
