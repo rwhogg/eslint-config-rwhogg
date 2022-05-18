@@ -25,6 +25,11 @@ module.exports = {
     "rules": {
         "consistent-return": 0,
         "jsx-quotes": [err, "prefer-double"],
+        "react/button-has-type": err,
+        "react/default-props-match-prop-types": err,
+        "react/hook-use-state": err,
+        "react/no-array-index-key": err,
+        "react/no-danger": err,
         "unicorn/no-invalid-remove-event-listener": err,
     },
 }
