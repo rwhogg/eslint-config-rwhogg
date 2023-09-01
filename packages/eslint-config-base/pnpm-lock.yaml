@@ -274,7 +274,7 @@ packages:
       create-eslint-index: 1.0.0
       eslint: 8.15.0
       eslint-ast-utils: 1.1.0
-      lodash: 4.17.15
+      lodash: 4.17.21
       req-all: 0.1.0
     dev: false
 
@@ -614,10 +614,6 @@ packages:
 
   /lodash.zip@4.2.0:
     resolution: {integrity: sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=}
-    dev: false
-
-  /lodash@4.17.15:
-    resolution: {integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==}
     dev: false
 
   /lodash@4.17.21:
